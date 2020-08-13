@@ -1,7 +1,7 @@
 package com.study.spring.ui;
 
 import com.study.spring.service.IAccountService;
-import com.study.spring.service.Impl.AccountServiceImpl;
+import com.study.spring.service.impl.AccountServiceImpl;
 
 /**
  * @author Harlan

@@ -1,4 +1,4 @@
-package com.study.spring.service.Impl;
+package com.study.spring.service.impl;
 
 import com.study.spring.dao.IAccountDao;
 import com.study.spring.dao.impl.AccountDaoImpl;

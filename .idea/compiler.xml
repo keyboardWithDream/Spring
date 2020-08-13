@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Spring" />
         <module name="L1_Coupling" />
+        <module name="L2_FactoryPattern" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
