@@ -22,13 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0aac1c4-b399-492f-979d-c09989e10334" name="Default Changelist" comment="工厂模式解耦">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="c0aac1c4-b399-492f-979d-c09989e10334" name="Default Changelist" comment="工厂模式">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/L1_Coupling/src/main/java/com/study/spring/service/Impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/L1_Coupling/src/main/java/com/study/spring/service/impl/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/L1_Coupling/src/main/java/com/study/spring/ui/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/L1_Coupling/src/main/java/com/study/spring/ui/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring的概述.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/L1_Coupling/程序耦合分析.md" beforeDir="false" afterPath="$PROJECT_DIR$/L1_Coupling/程序耦合分析.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +158,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597308750453</updated>
-      <workItem from="1597308751744" duration="6341000" />
+      <workItem from="1597308751744" duration="9901000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1597308852698</created>
@@ -213,7 +209,21 @@
       <option name="project" value="LOCAL" />
       <updated>1597315485435</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Update">
+      <created>1597315520536</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1597315520536</updated>
+    </task>
+    <task id="LOCAL-00009" summary="工厂模式">
+      <created>1597333581673</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1597333581673</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,10 +245,11 @@
     <MESSAGE value="Spring的概述" />
     <MESSAGE value="JDBC的耦合" />
     <MESSAGE value="JDBC的解耦" />
-    <MESSAGE value="Update" />
     <MESSAGE value="MVC开发间的耦合" />
     <MESSAGE value="工厂模式解耦" />
-    <option name="LAST_COMMIT_MESSAGE" value="工厂模式解耦" />
+    <MESSAGE value="Update" />
+    <MESSAGE value="工厂模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="工厂模式" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1044" y="587" key="#SQL_Resolution_Scopes" timestamp="1597309809996">
@@ -253,30 +264,30 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1666" y="421" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1597312363135" />
-    <state width="1784" height="344" key="GridCell.Tab.0.bottom" timestamp="1597315442340">
+    <state width="1784" height="344" key="GridCell.Tab.0.bottom" timestamp="1597333845650">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1784" height="344" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1597315442340" />
-    <state width="1784" height="344" key="GridCell.Tab.0.center" timestamp="1597315442340">
+    <state width="1784" height="344" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1597333845650" />
+    <state width="1784" height="344" key="GridCell.Tab.0.center" timestamp="1597333845649">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1784" height="344" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1597315442340" />
-    <state width="1784" height="344" key="GridCell.Tab.0.left" timestamp="1597315442340">
+    <state width="1784" height="344" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1597333845649" />
+    <state width="1784" height="344" key="GridCell.Tab.0.left" timestamp="1597333845648">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1784" height="344" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1597315442340" />
-    <state width="1784" height="344" key="GridCell.Tab.0.right" timestamp="1597315442340">
+    <state width="1784" height="344" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1597333845648" />
+    <state width="1784" height="344" key="GridCell.Tab.0.right" timestamp="1597333845650">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1784" height="344" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1597315442340" />
+    <state width="1784" height="344" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1597333845650" />
     <state width="82" height="461" key="SqlResolveConfigurable" timestamp="1597309809105">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="82" height="461" key="SqlResolveConfigurable/0.0.2560.1400@0.0.2560.1400" timestamp="1597309809105" />
-    <state x="1202" y="464" key="Vcs.Push.Dialog.v2" timestamp="1597315489779">
+    <state x="1202" y="464" key="Vcs.Push.Dialog.v2" timestamp="1597333582980">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1202" y="464" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1597315489779" />
+    <state x="1202" y="464" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1597333582980" />
     <state x="660" y="413" key="new project wizard" timestamp="1597312808306">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
