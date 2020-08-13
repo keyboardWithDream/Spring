@@ -11,7 +11,11 @@ import com.study.spring.service.IAccountService;
 public class Client {
 
     public static void main(String[] args) {
-        IAccountService service = (IAccountService) BeanFactory.getBean("accountService");
-        service.save();
+
+        for (int i = 0; i < 5; i++) {
+            IAccountService service = (IAccountService) BeanFactory.getBean("accountService");
+            service.save();
+        }
+
     }
 }
