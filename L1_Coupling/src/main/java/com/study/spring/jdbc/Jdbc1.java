@@ -1,4 +1,4 @@
-package com.study.jdbc;
+package com.study.spring.jdbc;
 
 import java.sql.*;
 
