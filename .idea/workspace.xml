@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c0aac1c4-b399-492f-979d-c09989e10334" name="Default Changelist" comment="JDBC的耦合">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L1_Coupling/程序耦合分析.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L1_Coupling/src/main/java/com/study/jdbc/Jdbc1.java" beforeDir="false" afterPath="$PROJECT_DIR$/L1_Coupling/src/main/java/com/study/jdbc/Jdbc1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring的概述.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spring的概述.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Users\13536\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\202.6397.94\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="14" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1g2NVEfK75YHDURO2rKnqT8wo3j" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Jdbc1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.study.jdbc.Jdbc1" />
+      <module name="L1_Coupling" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.jdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Jdbc1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c0aac1c4-b399-492f-979d-c09989e10334" name="Default Changelist" comment="" />
+      <created>1597308750453</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597308750453</updated>
+      <workItem from="1597308751744" duration="3113000" />
+    </task>
+    <task id="LOCAL-00001" summary="Update">
+      <created>1597308852698</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597308852698</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Spring的概述">
+      <created>1597308878884</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597308878884</updated>
+    </task>
+    <task id="LOCAL-00003" summary="JDBC的耦合">
+      <created>1597310609077</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1597310609077</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Update" />
+    <MESSAGE value="Spring的概述" />
+    <MESSAGE value="JDBC的耦合" />
+    <option name="LAST_COMMIT_MESSAGE" value="JDBC的耦合" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1044" y="587" key="#SQL_Resolution_Scopes" timestamp="1597309809996">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1044" y="587" key="#SQL_Resolution_Scopes/0.0.2560.1400@0.0.2560.1400" timestamp="1597309809996" />
+    <state x="1202" y="389" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597309876967">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1202" y="389" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1597309876967" />
+    <state width="1784" height="344" key="GridCell.Tab.0.bottom" timestamp="1597311081983">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1784" height="344" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1597311081983" />
+    <state width="1784" height="344" key="GridCell.Tab.0.center" timestamp="1597311081983">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1784" height="344" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1597311081983" />
+    <state width="1784" height="344" key="GridCell.Tab.0.left" timestamp="1597311081982">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1784" height="344" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1597311081982" />
+    <state width="1784" height="344" key="GridCell.Tab.0.right" timestamp="1597311081983">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1784" height="344" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1597311081983" />
+    <state width="82" height="461" key="SqlResolveConfigurable" timestamp="1597309809105">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="82" height="461" key="SqlResolveConfigurable/0.0.2560.1400@0.0.2560.1400" timestamp="1597309809105" />
+    <state x="1202" y="464" key="Vcs.Push.Dialog.v2" timestamp="1597310621280">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1202" y="464" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1597310621280" />
+    <state x="660" y="413" key="new project wizard" timestamp="1597308984987">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="660" y="413" key="new project wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1597308984987" />
+  </component>
+</project>
