@@ -9,10 +9,12 @@ import java.sql.*;
  */
 public class Jdbc1 {
 
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args) throws SQLException, ClassNotFoundException {
 
         //1.注册驱动
-        DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
+        //DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
+        //解耦
+        Class.forName("com.mysql.cj.jdbc.Driver");
         //2.获取连接
         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/spring?serverTimezone=UTC", "root", "Hhn004460");
         //3.获取操作数据库的预处理对象
