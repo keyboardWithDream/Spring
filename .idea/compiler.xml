@@ -11,8 +11,5 @@
         <module name="L2_FactoryPattern" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Spring" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
 </project>
