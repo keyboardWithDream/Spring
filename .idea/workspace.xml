@@ -22,9 +22,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0aac1c4-b399-492f-979d-c09989e10334" name="Default Changelist" comment="工厂模式">
+    <list default="true" id="c0aac1c4-b399-492f-979d-c09989e10334" name="Default Changelist" comment="Spring中的IoC">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L4_Bean/L4_Bean.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L4_Bean/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L4_Bean/src/main/java/com/study/spring/factory/InstanceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L4_Bean/src/main/java/com/study/spring/factory/StaticFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L4_Bean/src/main/java/com/study/spring/service/IAccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L4_Bean/src/main/java/com/study/spring/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L4_Bean/src/main/java/com/study/spring/ui/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L4_Bean/src/main/resources/bean.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/L1_Coupling/程序耦合分析.md" beforeDir="false" afterPath="$PROJECT_DIR$/L1_Coupling/程序耦合分析.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,37 +88,32 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/L2_FactoryPattern/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/L4_Bean/src" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.study.spring.factory" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Code\Spring\L4_Bean\src" />
+      <recent name="E:\Code\Spring\L3_Spring_IoC\src" />
       <recent name="E:\Code\Spring\L2_FactoryPattern\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Client (1)">
-    <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.study.spring.ui.Client" />
-      <module name="L2_FactoryPattern" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.study.spring.ui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.study.spring.ui.Client" />
-      <module name="L1_Coupling" />
+      <module name="L4_Bean" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.study.spring.ui.*" />
@@ -118,37 +124,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Jdbc1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.study.jdbc.Jdbc1" />
-      <module name="L1_Coupling" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.study.jdbc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Client (1)" />
         <item itemvalue="Application.Client" />
-        <item itemvalue="Application.Jdbc1" />
       </list>
     </recent_temporary>
   </component>
@@ -161,6 +150,11 @@
       <option name="presentableId" value="Default" />
       <updated>1597308750453</updated>
       <workItem from="1597308751744" duration="9901000" />
+      <workItem from="1597389640526" duration="6097000" />
+      <workItem from="1597398835142" duration="316000" />
+      <workItem from="1597399158965" duration="166000" />
+      <workItem from="1597399357054" duration="37000" />
+      <workItem from="1597399408583" duration="2797000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1597308852698</created>
@@ -225,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597333581673</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Spring中的IoC">
+      <created>1597398742048</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1597398742048</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,6 +242,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -251,48 +253,61 @@
     <MESSAGE value="工厂模式解耦" />
     <MESSAGE value="Update" />
     <MESSAGE value="工厂模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="工厂模式" />
+    <MESSAGE value="Spring中的IoC" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring中的IoC" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1044" y="587" key="#SQL_Resolution_Scopes" timestamp="1597309809996">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1044" y="587" key="#SQL_Resolution_Scopes/0.0.2560.1400@0.0.2560.1400" timestamp="1597309809996" />
-    <state x="1202" y="389" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597309876967">
+    <state x="1202" y="389" width="1092" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597399573744">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1202" y="389" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1597309876967" />
+    <state x="1202" y="389" width="1092" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1597399573744" />
     <state x="1666" y="421" key="#com.intellij.ide.util.MemberChooser" timestamp="1597312363135">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1666" y="421" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1597312363135" />
-    <state width="1784" height="344" key="GridCell.Tab.0.bottom" timestamp="1597333845650">
+    <state x="1486" y="436" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597391245719">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1784" height="344" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1597333845650" />
-    <state width="1784" height="344" key="GridCell.Tab.0.center" timestamp="1597333845649">
+    <state x="1486" y="436" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1597391245719" />
+    <state x="796" y="449" key="FileChooserDialogImpl" timestamp="1597399455201">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1784" height="344" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1597333845649" />
-    <state width="1784" height="344" key="GridCell.Tab.0.left" timestamp="1597333845648">
+    <state x="796" y="449" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1597399455201" />
+    <state width="1489" height="479" key="GridCell.Tab.0.bottom" timestamp="1597408922921">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1784" height="344" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1597333845648" />
-    <state width="1784" height="344" key="GridCell.Tab.0.right" timestamp="1597333845650">
+    <state width="1489" height="479" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1597408922921" />
+    <state width="1489" height="479" key="GridCell.Tab.0.center" timestamp="1597408922921">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1784" height="344" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1597333845650" />
+    <state width="1489" height="479" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1597408922921" />
+    <state width="1489" height="479" key="GridCell.Tab.0.left" timestamp="1597408922920">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1489" height="479" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1597408922920" />
+    <state width="1489" height="479" key="GridCell.Tab.0.right" timestamp="1597408922921">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1489" height="479" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1597408922921" />
+    <state x="310" y="387" key="SettingsEditor" timestamp="1597399486680">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="310" y="387" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1597399486680" />
     <state width="82" height="461" key="SqlResolveConfigurable" timestamp="1597309809105">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="82" height="461" key="SqlResolveConfigurable/0.0.2560.1400@0.0.2560.1400" timestamp="1597309809105" />
-    <state x="1202" y="464" key="Vcs.Push.Dialog.v2" timestamp="1597333582980">
+    <state x="1202" y="464" key="Vcs.Push.Dialog.v2" timestamp="1597398841534">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1202" y="464" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1597333582980" />
-    <state x="660" y="413" key="new project wizard" timestamp="1597312808306">
+    <state x="1202" y="464" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1597398841534" />
+    <state x="660" y="413" key="new project wizard" timestamp="1597399482920">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="660" y="413" key="new project wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1597312808306" />
+    <state x="660" y="413" key="new project wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1597399482920" />
   </component>
 </project>
