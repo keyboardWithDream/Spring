@@ -22,20 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0aac1c4-b399-492f-979d-c09989e10334" name="Default Changelist" comment="Spring中的IoC">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L4_Bean/L4_Bean.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L4_Bean/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L4_Bean/src/main/java/com/study/spring/factory/InstanceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L4_Bean/src/main/java/com/study/spring/factory/StaticFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L4_Bean/src/main/java/com/study/spring/service/IAccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L4_Bean/src/main/java/com/study/spring/service/impl/AccountServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L4_Bean/src/main/java/com/study/spring/ui/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L4_Bean/src/main/resources/bean.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+    <list default="true" id="c0aac1c4-b399-492f-979d-c09989e10334" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/L4_Bean/Spring对Bean的管理.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L4_Bean/src/main/resources/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/L4_Bean/src/main/resources/bean.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,13 +114,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -154,7 +146,8 @@
       <workItem from="1597398835142" duration="316000" />
       <workItem from="1597399158965" duration="166000" />
       <workItem from="1597399357054" duration="37000" />
-      <workItem from="1597399408583" duration="2797000" />
+      <workItem from="1597399408583" duration="3390000" />
+      <workItem from="1597447082342" duration="2236000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1597308852698</created>
@@ -226,7 +219,21 @@
       <option name="project" value="LOCAL" />
       <updated>1597398742048</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Spring中Bean的创建">
+      <created>1597409372075</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1597409372075</updated>
+    </task>
+    <task id="LOCAL-00012" summary="update">
+      <created>1597409406707</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1597409406707</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,7 +261,9 @@
     <MESSAGE value="Update" />
     <MESSAGE value="工厂模式" />
     <MESSAGE value="Spring中的IoC" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring中的IoC" />
+    <MESSAGE value="Spring中Bean的创建" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1044" y="587" key="#SQL_Resolution_Scopes" timestamp="1597309809996">
@@ -277,22 +286,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="796" y="449" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1597399455201" />
-    <state width="1489" height="479" key="GridCell.Tab.0.bottom" timestamp="1597408922921">
+    <state width="1489" height="479" key="GridCell.Tab.0.bottom" timestamp="1597409870147">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1489" height="479" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1597408922921" />
-    <state width="1489" height="479" key="GridCell.Tab.0.center" timestamp="1597408922921">
+    <state width="1489" height="479" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1597409870147" />
+    <state width="1489" height="479" key="GridCell.Tab.0.center" timestamp="1597409870147">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1489" height="479" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1597408922921" />
-    <state width="1489" height="479" key="GridCell.Tab.0.left" timestamp="1597408922920">
+    <state width="1489" height="479" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1597409870147" />
+    <state width="1489" height="479" key="GridCell.Tab.0.left" timestamp="1597409870147">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1489" height="479" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1597408922920" />
-    <state width="1489" height="479" key="GridCell.Tab.0.right" timestamp="1597408922921">
+    <state width="1489" height="479" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1597409870147" />
+    <state width="1489" height="479" key="GridCell.Tab.0.right" timestamp="1597409870147">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1489" height="479" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1597408922921" />
+    <state width="1489" height="479" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1597409870147" />
     <state x="310" y="387" key="SettingsEditor" timestamp="1597399486680">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -301,10 +310,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="82" height="461" key="SqlResolveConfigurable/0.0.2560.1400@0.0.2560.1400" timestamp="1597309809105" />
-    <state x="1202" y="464" key="Vcs.Push.Dialog.v2" timestamp="1597398841534">
+    <state x="1202" y="464" key="Vcs.Push.Dialog.v2" timestamp="1597409408067">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1202" y="464" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1597398841534" />
+    <state x="1202" y="464" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1597409408067" />
     <state x="660" y="413" key="new project wizard" timestamp="1597399482920">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
