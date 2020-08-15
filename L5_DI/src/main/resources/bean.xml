@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 构造函数注入 -->
+    <bean id="accountService" class="com.study.spring.service.impl.AccountServiceImpl">
+        <constructor-arg name="name" value="test"/>
+        <constructor-arg name="age" value="18"/>
+        <constructor-arg name="birthday" ref="now"/>
+    </bean>
+
+    <!-- 创建一个日期对象存入容器 -->
+    <bean id="now" class="java.util.Date"/>
+</beans>
