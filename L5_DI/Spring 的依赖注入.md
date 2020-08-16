@@ -42,3 +42,91 @@
 <bean id="now" class="java.util.Date"/>
 ```
 
+***
+
+
+
+## `set`方法注入
+
+<font color=red>**优势: 创建对现时, 没有明确的限制, 可以直接使用构造函数.**</font>
+
+<font color=green>**弊端: 如果某个成员必须有值, 则获取对象时有可能`set`方法没有执行 .**</font>
+
+使用`<property>`标签
+
+|  属性   |                             取值                             |
+| :-----: | :----------------------------------------------------------: |
+| `name`  |                    指定bean的**属性名称**                    |
+| `value` |                  提供基本类型和String的数据                  |
+|  `ref`  | 指定其他的**Bean类型**, 指在`Spring`的`IoC`核心容器中出现过的`Bean`对象 |
+
+
+
+```xml
+<!-- set方法注入 -->
+<bean id="accountService2" class="com.study.spring.service.impl.AccountServiceImpl2">
+    <property name="name" value="test"/>
+    <property name="age" value="19"/>
+    <property name="birthday" ref="now"/>
+ </bean>
+ 
+ <!-- 创建一个日期对象存入容器 -->
+<bean id="now" class="java.util.Date"/>
+```
+
+***
+
+
+
+## 复杂类型(集合)的注入
+
+`<property>`中的标签
+
+用于给`List`结构集合注入的标签`<list>`, `<array>`, `<set>`
+用于给`Map`结构集合注入的标签`<map>`, `<props>`
+
+
+```xml
+<bean id="accountService3" class="com.study.spring.service.impl.AccountServiceImpl3">
+    <!-- array -->
+    <property name="myArray">
+        <array>
+            <value>aaa</value>
+            <value>bbb</value>
+            <value>ccc</value>
+        </array>
+    </property>
+    <!-- list -->
+    <property name="myList">
+        <list>
+            <value>aaa</value>
+            <value>bbb</value>
+            <value>ccc</value>
+        </list>
+    </property>
+    <!-- set -->
+    <property name="mySet">
+        <set>
+            <value>aaa</value>
+            <value>bbb</value>
+            <value>ccc</value>
+        </set>
+    </property>
+    <!-- map -->
+    <property name="myMap">
+        <map>
+            <entry key="testA" value="AAA"/>
+            <entry key="testB">
+                <value>BBB</value>
+            </entry>
+        </map>
+    </property>
+    <!-- property -->
+    <property name="myProps">
+        <props>
+            <prop key="testC">CCC</prop>
+            <prop key="testD">DDD</prop>
+        </props>
+    </property>
+</bean>
+```

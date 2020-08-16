@@ -21,7 +21,11 @@ public class Client {
 
         //2.根据id获取bean对象
         IAccountService service = ac.getBean("accountService", IAccountService.class);
+        IAccountService service2 = ac.getBean("accountService2", IAccountService.class);
+        IAccountService service3 = ac.getBean("accountService3", IAccountService.class);
 
         service.save();
+        service2.save();
+        service3.save();
     }
 }

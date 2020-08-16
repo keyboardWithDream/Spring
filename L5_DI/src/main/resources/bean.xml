@@ -13,4 +13,56 @@
 
     <!-- 创建一个日期对象存入容器 -->
     <bean id="now" class="java.util.Date"/>
+
+
+    <!-- set方法注入 -->
+    <bean id="accountService2" class="com.study.spring.service.impl.AccountServiceImpl2">
+        <property name="name" value="test"/>
+        <property name="age" value="19"/>
+        <property name="birthday" ref="now"/>
+     </bean>
+
+    <!-- 复杂类型/集合类型 的注入
+    用于给List结构集合注入的标签
+    list, array, set
+    用于给Map结构集合注入的标签
+    map, props
+     -->
+    <bean id="accountService3" class="com.study.spring.service.impl.AccountServiceImpl3">
+        <property name="myArray">
+            <array>
+                <value>aaa</value>
+                <value>bbb</value>
+                <value>ccc</value>
+            </array>
+        </property>
+        <property name="myList">
+            <list>
+                <value>aaa</value>
+                <value>bbb</value>
+                <value>ccc</value>
+            </list>
+        </property>
+        <property name="mySet">
+            <set>
+                <value>aaa</value>
+                <value>bbb</value>
+                <value>ccc</value>
+            </set>
+        </property>
+        <property name="myMap">
+            <map>
+                <entry key="testA" value="AAA"/>
+                <entry key="testB">
+                    <value>BBB</value>
+                </entry>
+            </map>
+        </property>
+        <property name="myProps">
+            <props>
+                <prop key="testC">CCC</prop>
+                <prop key="testD">DDD</prop>
+            </props>
+        </property>
+    </bean>
 </beans>
