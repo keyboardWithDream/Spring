@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/L3_Spring_IoC/pom.xml" />
         <option value="$PROJECT_DIR$/L4_Bean/pom.xml" />
         <option value="$PROJECT_DIR$/L5_DI/pom.xml" />
+        <option value="$PROJECT_DIR$/L6_Anno_IoC/pom.xml" />
       </list>
     </option>
   </component>
