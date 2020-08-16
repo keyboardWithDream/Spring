@@ -10,6 +10,7 @@
         <module name="L2_FactoryPattern" />
         <module name="L4_Bean" />
         <module name="L3_Spring_IoC" />
+        <module name="L5_DI" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
