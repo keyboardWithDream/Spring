@@ -13,6 +13,7 @@
         <module name="L2_FactoryPattern" />
         <module name="L4_Bean" />
         <module name="L3_Spring_IoC" />
+        <module name="L9_Without_XML_IoC" />
         <module name="L6_Anno_IoC" />
       </profile>
     </annotationProcessing>
