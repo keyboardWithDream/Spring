@@ -2,6 +2,8 @@ package config;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.apache.commons.dbutils.QueryRunner;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
@@ -15,20 +17,29 @@ import java.beans.PropertyVetoException;
  */
 public class JdbcConfiguration {
 
+    @Value("${jdbc.driver}")
+    private String driver;
+    @Value("${jdbc.url}")
+    private String url;
+    @Value("${jdbc.user}")
+    private String user;
+    @Value("${jdbc.password}")
+    private String password;
+
     @Bean(name = "runner")
     @Scope("prototype")
-    public QueryRunner createQueryRunner(DataSource ds){
+    public QueryRunner createQueryRunner(@Qualifier("spring") DataSource ds){
         return new QueryRunner(ds);
     }
 
-    @Bean(name = "ds")
+    @Bean(name = "spring")
     public DataSource createDataSource(){
         ComboPooledDataSource ds = new ComboPooledDataSource();
         try {
-            ds.setDriverClass("com.mysql.cj.jdbc.Driver");
-            ds.setJdbcUrl("jdbc:mysql://localhost:3306/spring?serverTimezone=UTC");
-            ds.setUser("root");
-            ds.setPassword("Hhn004460");
+            ds.setDriverClass(driver);
+            ds.setJdbcUrl(url);
+            ds.setUser(user);
+            ds.setPassword(password);
             return ds;
         } catch (PropertyVetoException e) {
             e.printStackTrace();
