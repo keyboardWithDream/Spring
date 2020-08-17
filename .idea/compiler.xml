@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="L5_DI" />
+        <module name="L7_IoC_XML_Case" />
         <module name="L1_Coupling" />
         <module name="L2_FactoryPattern" />
         <module name="L4_Bean" />
         <module name="L3_Spring_IoC" />
-        <module name="L5_DI" />
         <module name="L6_Anno_IoC" />
       </profile>
     </annotationProcessing>
