@@ -58,6 +58,7 @@ public class AccountServiceImpl implements IAccountService {
             tm.commit();
         }catch (Exception e){
             tm.rollback();
+            e.printStackTrace();
         }finally {
             tm.release();
         }
@@ -70,6 +71,7 @@ public class AccountServiceImpl implements IAccountService {
             tm.commit();
         }catch (Exception e){
             tm.rollback();
+            e.printStackTrace();
         }finally {
             tm.release();
         }
@@ -82,6 +84,7 @@ public class AccountServiceImpl implements IAccountService {
             tm.commit();
         }catch (Exception e){
             tm.rollback();
+            e.printStackTrace();
         }finally {
             tm.release();
         }
@@ -104,6 +107,7 @@ public class AccountServiceImpl implements IAccountService {
             tm.commit();
         }catch (Exception e){
             tm.rollback();
+            e.printStackTrace();
         }finally {
             tm.release();
         }
