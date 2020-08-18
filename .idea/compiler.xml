@@ -9,6 +9,7 @@
         <module name="L8_IoC_Anno_Case" />
         <module name="L5_DI" />
         <module name="L7_IoC_XML_Case" />
+        <module name="L10_Transaction" />
         <module name="L1_Coupling" />
         <module name="L2_FactoryPattern" />
         <module name="L4_Bean" />
