@@ -28,11 +28,11 @@ public class JdbcConfiguration {
 
     @Bean(name = "runner")
     @Scope("prototype")
-    public QueryRunner createQueryRunner(@Qualifier("spring") DataSource ds){
+    public QueryRunner createQueryRunner(@Qualifier("ds") DataSource ds){
         return new QueryRunner(ds);
     }
 
-    @Bean(name = "spring")
+    @Bean(name = "ds")
     public DataSource createDataSource(){
         ComboPooledDataSource ds = new ComboPooledDataSource();
         try {

@@ -23,45 +23,7 @@ public class AccountServiceTest {
     IAccountService service;
 
     @Test
-    public void testFindAll(){
-        List<Account> accounts = service.findAll();
-        for (Account account : accounts) {
-            System.out.println(account);
-        }
-    }
-
-    @Test
-    public void testFindById(){
-        Account account = service.findById(1);
-        System.out.println(account);
-    }
-
-    @Test
-    public void testSave(){
-        Account account = new Account();
-        account.setName("Harlan");
-        account.setMoney(999999.0);
-
-        service.save(account);
-    }
-
-    @Test
-    public void testUpdate(){
-        Account account = new Account();
-        account.setId(5);
-        account.setName("Test");
-        account.setMoney(9999999999.0);
-
-        service.update(account);
-    }
-
-    @Test
-    public void testDelete(){
-        service.delete(5);
-    }
-
-    @Test
     public void testTransfer(){
-        service.transfer("aac", "bbb", 100.0);
+        service.transfer("aaa", "bbb", 100.0);
     }
 }
