@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="L8_IoC_Anno_Case" />
         <module name="L5_DI" />
+        <module name="L12_AOP" />
         <module name="L7_IoC_XML_Case" />
         <module name="L10_Transaction" />
         <module name="L1_Coupling" />
