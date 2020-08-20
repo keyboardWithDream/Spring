@@ -1,5 +1,7 @@
 package com.study.spring.utils;
 
+import org.aspectj.lang.ProceedingJoinPoint;
+
 /**
  * @author Harlan
  * @date 2020-8-20 下午 6:59
@@ -34,5 +36,25 @@ public class Logger {
      */
     public void afterPrintLog(){
         System.out.println("最终通知");
+    }
+
+    /**
+     * 环绕通知
+     * @return
+     */
+    public Object aroundPrintLog(ProceedingJoinPoint joinPoint){
+        Object result = null;
+        try {
+            Object[] args = joinPoint.getArgs();
+            System.out.println("环绕通知");
+            result = joinPoint.proceed(args);
+            System.out.println("环绕通知");
+            return result;
+        } catch (Throwable throwable) {
+            System.out.println("环绕通知");
+            throw new RuntimeException(throwable);
+        }finally {
+            System.out.println("环绕通知");
+        }
     }
 }

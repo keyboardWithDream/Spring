@@ -11,7 +11,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class AccountServiceTest {
 
     public static void main(String[] args) {
-
         ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
         IAccountService service = ac.getBean("accountService", IAccountService.class);
         service.save();

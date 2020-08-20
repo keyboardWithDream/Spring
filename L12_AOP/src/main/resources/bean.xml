@@ -24,6 +24,9 @@
             <aop:after-returning method="afterReturnPrintLog" pointcut-ref="transactionPoint"/>
             <aop:after-throwing method="throwingPrintLog" pointcut-ref="transactionPoint"/>
             <aop:after method="afterPrintLog" pointcut-ref="transactionPoint"/>
+
+            <!-- 环绕通知 -->
+            <aop:around method="aroundPrintLog" pointcut-ref="transactionPoint"/>
         </aop:aspect>
     </aop:config>
 </beans>
