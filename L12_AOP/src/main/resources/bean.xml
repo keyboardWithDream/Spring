@@ -15,8 +15,15 @@
 
     <!-- 使用aop:config标签表明开始AOP的配置 -->
     <aop:config>
+        <!-- 配置切入点 -->
+        <aop:pointcut id="transactionPoint" expression="execution(* com.study.spring.service.impl.*.*(..))"/>
+
+        <!-- 配置切面 -->
         <aop:aspect id="logAdvice" ref="logger">
-            <aop:before method="printLog" pointcut="execution(* com.study.spring.service.impl.*.*(..))"/>
+            <aop:before method="beforePrintLog" pointcut-ref="transactionPoint"/>
+            <aop:after-returning method="afterReturnPrintLog" pointcut-ref="transactionPoint"/>
+            <aop:after-throwing method="throwingPrintLog" pointcut-ref="transactionPoint"/>
+            <aop:after method="afterPrintLog" pointcut-ref="transactionPoint"/>
         </aop:aspect>
     </aop:config>
 </beans>
