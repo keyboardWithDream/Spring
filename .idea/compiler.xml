@@ -16,6 +16,7 @@
         <module name="L3_Spring_IoC" />
         <module name="L9_Without_XML_IoC" />
         <module name="L6_Anno_IoC" />
+        <module name="L11_Proxy" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

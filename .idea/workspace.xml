@@ -22,21 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0aac1c4-b399-492f-979d-c09989e10334" name="Default Changelist" comment="Update">
-      <change afterPath="$PROJECT_DIR$/L10_Transaction/L10_Transaction.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L10_Transaction/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L10_Transaction/src/main/java/com/study/spring/dao/IAccountDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L10_Transaction/src/main/java/com/study/spring/dao/impl/AccountDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L10_Transaction/src/main/java/com/study/spring/domian/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L10_Transaction/src/main/java/com/study/spring/service/IAccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L10_Transaction/src/main/java/com/study/spring/service/impl/AccountServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L10_Transaction/src/main/java/config/JdbcConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L10_Transaction/src/main/java/config/SpringConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L10_Transaction/src/main/resources/jdbcConfig.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L10_Transaction/src/test/java/com/study/spring/test/AccountServiceTest.java" afterDir="false" />
+    <list default="true" id="c0aac1c4-b399-492f-979d-c09989e10334" name="Default Changelist" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L10_Transaction/src/main/java/com/study/spring/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/L10_Transaction/src/main/java/com/study/spring/service/impl/AccountServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +80,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/L10_Transaction/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/L11_Proxy/src/main/java/com/study/cglib" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -109,11 +99,11 @@
       <recent name="com.study.spring.factory" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Code\Spring\L11_Proxy\src\main\java\com\study\cglib" />
       <recent name="E:\Code\Spring\L10_Transaction\src" />
       <recent name="E:\Code\Spring\L9_Without_XML_IoC\src" />
       <recent name="E:\Code\Spring\L8_IoC_Anno_Case\src" />
       <recent name="E:\Code\Spring\L6_Anno_IoC\src" />
-      <recent name="E:\Code\Spring\L5_DI\src" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -122,16 +112,30 @@
       <command value="mvn:run" />
     </option>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AccountServiceTest.testTransfer">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountServiceTest.testFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="L10_Transaction" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.spring.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.study.spring.test" />
+      <option name="MAIN_CLASS_NAME" value="com.study.spring.test.AccountServiceTest" />
+      <option name="METHOD_NAME" value="testFindAll" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -152,9 +156,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.AccountServiceTest.testTransfer" />
+      <item itemvalue="JUnit.AccountServiceTest.testFindAll" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.AccountServiceTest.testTransfer" />
+        <item itemvalue="JUnit.AccountServiceTest.testFindAll" />
       </list>
     </recent_temporary>
   </component>
@@ -181,7 +190,10 @@
       <workItem from="1597591480780" duration="1390000" />
       <workItem from="1597592905342" duration="1068000" />
       <workItem from="1597643241421" duration="10336000" />
-      <workItem from="1597735430778" duration="4549000" />
+      <workItem from="1597735430778" duration="9838000" />
+      <workItem from="1597767382314" duration="666000" />
+      <workItem from="1597816850689" duration="611000" />
+      <workItem from="1597906240170" duration="7610000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1597308852698</created>
@@ -372,7 +384,49 @@
       <option name="project" value="LOCAL" />
       <updated>1597654827609</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="转账事务演示">
+      <created>1597754157104</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1597754157104</updated>
+    </task>
+    <task id="LOCAL-00029" summary="update">
+      <created>1597754191648</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1597754191648</updated>
+    </task>
+    <task id="LOCAL-00030" summary="使用工具类实现事务控制">
+      <created>1597760633351</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1597760633351</updated>
+    </task>
+    <task id="LOCAL-00031" summary="使用工具类实现事务控制">
+      <created>1597760770453</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1597760770453</updated>
+    </task>
+    <task id="LOCAL-00032" summary="使用动态代理">
+      <created>1597913871410</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1597913871410</updated>
+    </task>
+    <task id="LOCAL-00033" summary="动态代理">
+      <created>1597913895644</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1597913895644</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,7 +454,6 @@
     <MESSAGE value="工厂模式" />
     <MESSAGE value="Spring中的IoC" />
     <MESSAGE value="Spring中Bean的创建" />
-    <MESSAGE value="update" />
     <MESSAGE value="Bean对象的作用范围及生命周期" />
     <MESSAGE value="依赖注入: 构造函数" />
     <MESSAGE value="依赖注入: Set方法和复杂类型" />
@@ -412,7 +465,12 @@
     <MESSAGE value="抽取数据库连接信息" />
     <MESSAGE value="Spring整合junit" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="转账事务演示" />
+    <MESSAGE value="使用工具类实现事务控制" />
+    <MESSAGE value="使用动态代理" />
+    <MESSAGE value="动态代理" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1014" y="578" key="#SQL_Dialects" timestamp="1597589729513">
@@ -423,14 +481,14 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1044" y="587" key="#SQL_Resolution_Scopes/0.0.2560.1400@0.0.2560.1400" timestamp="1597309809996" />
-    <state x="1202" y="389" width="1092" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597736842679">
+    <state x="1202" y="389" width="1092" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597910004571">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1202" y="389" width="1092" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1597736842679" />
-    <state x="1666" y="421" key="#com.intellij.ide.util.MemberChooser" timestamp="1597753368890">
+    <state x="1202" y="389" width="1092" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1597910004571" />
+    <state x="1666" y="421" key="#com.intellij.ide.util.MemberChooser" timestamp="1597911293538">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1666" y="421" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1597753368890" />
+    <state x="1666" y="421" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1597911293538" />
     <state x="1400" y="593" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1597648374296">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -439,54 +497,58 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1486" y="436" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1597648174974" />
-    <state x="796" y="449" key="FileChooserDialogImpl" timestamp="1597752789638">
+    <state x="796" y="449" key="FileChooserDialogImpl" timestamp="1597906357696">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="796" y="449" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1597752789638" />
-    <state width="802" height="438" key="GridCell.Tab.0.bottom" timestamp="1597656794803">
+    <state x="796" y="449" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1597906357696" />
+    <state width="1604" height="416" key="GridCell.Tab.0.bottom" timestamp="1597913913051">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="802" height="438" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1597656794803" />
-    <state width="802" height="438" key="GridCell.Tab.0.center" timestamp="1597656794803">
+    <state width="1604" height="416" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1597913913051" />
+    <state width="1604" height="416" key="GridCell.Tab.0.center" timestamp="1597913913051">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="802" height="438" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1597656794803" />
-    <state width="802" height="438" key="GridCell.Tab.0.left" timestamp="1597656794803">
+    <state width="1604" height="416" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1597913913051" />
+    <state width="1604" height="416" key="GridCell.Tab.0.left" timestamp="1597913913051">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="802" height="438" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1597656794803" />
-    <state width="802" height="438" key="GridCell.Tab.0.right" timestamp="1597656794803">
+    <state width="1604" height="416" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1597913913051" />
+    <state width="1604" height="416" key="GridCell.Tab.0.right" timestamp="1597913913051">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="802" height="438" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1597656794803" />
+    <state width="1604" height="416" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1597913913051" />
     <state x="1271" y="463" key="IDE.errors.dialog" timestamp="1597591319823">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1271" y="463" key="IDE.errors.dialog/0.0.2560.1400@0.0.2560.1400" timestamp="1597591319823" />
-    <state x="462" y="346" key="SettingsEditor" timestamp="1597752812526">
+    <state x="462" y="346" key="SettingsEditor" timestamp="1597910520552">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="462" y="346" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1597752812526" />
+    <state x="462" y="346" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1597910520552" />
     <state width="82" height="461" key="SqlResolveConfigurable" timestamp="1597309809105">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="82" height="461" key="SqlResolveConfigurable/0.0.2560.1400@0.0.2560.1400" timestamp="1597309809105" />
-    <state x="1202" y="464" key="Vcs.Push.Dialog.v2" timestamp="1597654831563">
+    <state x="1202" y="464" key="Vcs.Push.Dialog.v2" timestamp="1597913897280">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1202" y="464" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1597654831563" />
-    <state x="-33" y="112" width="1112" height="1117" key="dock-window-1" timestamp="1597590717627">
+    <state x="1202" y="464" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1597913897280" />
+    <state x="0" y="9" width="1307" height="1117" key="dock-window-1" timestamp="1597760277317">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="-33" y="112" width="1112" height="1117" key="dock-window-1/0.0.2560.1400@0.0.2560.1400" timestamp="1597590717627" />
+    <state x="0" y="9" width="1307" height="1117" key="dock-window-1/0.0.2560.1400@0.0.2560.1400" timestamp="1597760277317" />
     <state x="90" y="162" width="1112" height="1117" key="dock-window-2" timestamp="1597590717628">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="90" y="162" width="1112" height="1117" key="dock-window-2/0.0.2560.1400@0.0.2560.1400" timestamp="1597590717628" />
-    <state x="896" y="455" key="new project wizard" timestamp="1597752808766">
+    <state x="1472" y="471" key="extract.method.dialog" timestamp="1597913623894">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="896" y="455" key="new project wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1597752808766" />
+    <state x="1472" y="471" key="extract.method.dialog/0.0.2560.1400@0.0.2560.1400" timestamp="1597913623894" />
+    <state x="896" y="455" key="new project wizard" timestamp="1597910519764">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="896" y="455" key="new project wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1597910519764" />
     <state x="1368" y="304" width="672" height="677" key="run.anything.popup" timestamp="1597592834970">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

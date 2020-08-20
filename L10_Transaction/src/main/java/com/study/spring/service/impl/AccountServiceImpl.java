@@ -43,7 +43,6 @@ public class AccountServiceImpl implements IAccountService {
         Account source = dao.findByName(fromName);
         source.setMoney(source.getMoney() - money);
         dao.update(source);
-        int test = 1 / 0;
         Account target = dao.findByName(toName);
         target.setMoney(target.getMoney() + money);
         dao.update(target);
