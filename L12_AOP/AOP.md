@@ -83,6 +83,16 @@
 </bean>
 ```
 
+`prom.xml`中导入解析坐标
+
+```xml
+<dependency>
+    <groupId>org.aspectj</groupId>
+    <artifactId>aspectjweaver</artifactId>
+    <version>1.8.7</version>
+</dependency>
+```
+
 ***
 
 <font color=green>**2.配置相关IoC的Bean对象**</font>
@@ -106,7 +116,7 @@
 
 <font color=green>**3.3.使用`<aop:aspect>`标签开始配置切面**</font>
 
-属性：
+**属性**：
 
 `id`：给切面提供一个唯一标识
 
@@ -124,18 +134,62 @@
 
 `<aop:before>`：前置通知
 
-属性：
+`<aop:after-returning>`: 后置通知
+
+`<aop:after-throwing>`: 异常通知
+
+`<aop:after>`: 最终通知
+
+`<aop:around>`: 环绕通知
+
+**属性**：
 
 `method`：指定`Logger`类中哪个方法是前置通知
 
 `pointcut`：指定切入点表达式，用于哪些方法进行增强
 
-​	关键字：`execution()`
+​	**关键字**：`execution()`
 
-​	表达式：访问修饰符	返回值	全限定类名.方法名(参数列表)
+​	**表达式**：`访问修饰符	返回值	全限定类名.方法名(参数列表)`
 
 ```xml
 <aop:before method="printLog" pointcut="execution(public void com.study.spring.service.impl.AccountServiceImpl.save())"/>
+```
+
+**全通配表达式**：`*	*..*.*(..)`
+
+访问修饰符可省略，返回值可使用`*`（任何返回值），包名可使用`*`（任意包，有几级写几级）,包名可使用`..`（当前包及其子包），类名和方法名可使用`*`（任意类、方法），`..`（任意类型参数）-基本类型直接写-引用类型写全限定类名
+
+```xml
+<aop:before method="printLog" pointcut="execution(* *..*.*(..))"/>
+```
+
+**配置切入点表达式**: `<aop:pointcut>`标签 ,`id`: 指定唯一标识, `expression`: 指定表达式内容
+
+```xml
+<aop:pointcut id="transactionPoint" expression="execution(* com.study.spring.service.impl.*.*(..))"/>
+```
+
+---
+
+**环绕通知**: 通过手动编码实现
+
+```java
+public Object aroundPrintLog(ProceedingJoinPoint joinPoint){
+    Object result = null;
+    try {
+        Object[] args = joinPoint.getArgs();
+        System.out.println("环绕通知");
+        result = joinPoint.proceed(args);
+        System.out.println("环绕通知");
+        return result;
+    } catch (Throwable throwable) {
+        System.out.println("环绕通知");
+        throw new RuntimeException(throwable);
+    }finally {
+        System.out.println("环绕通知");
+    }
+}
 ```
 
 ***
@@ -166,6 +220,12 @@
     </aop:config>
 </beans>
 ```
+
+***
+
+---
+
+## Spring基于注解的AOP
 
 
 
