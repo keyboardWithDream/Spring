@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:property-placeholder ignore-unresolvable="true" location="classpath:jdbcConfig.properties"/>
+
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="jdbcUrl" value="${jdbc.url}"/>
+        <property name="driverClass" value="${jdbc.driver}"/>
+        <property name="user" value="${jdbc.user}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+
+    <bean id="runner" class="org.apache.commons.dbutils.QueryRunner" scope="prototype"/>
+
+    <bean id="connectionUtil" class="com.study.spring.utils.ConnectionUtil">
+        <property name="ds" ref="dataSource"/>
+    </bean>
+
+    <bean id="tm" class="com.study.spring.utils.TransactionManager">
+        <property name="connectionUtils" ref="connectionUtil"/>
+    </bean>
+
+    <bean id="accountService" class="com.study.spring.service.impl.AccountServiceImpl">
+        <property name="dao" ref="accountDao"/>
+    </bean>
+
+    <bean id="accountDao" class="com.study.spring.dao.impl.AccountDao">
+        <property name="runner" ref="runner"/>
+        <property name="connectionUtil" ref="connectionUtil"/>
+    </bean>
+
+    <aop:config>
+        <aop:pointcut id="tmp" expression="execution(* com.study.spring.service.impl.*.*(..))"/>
+
+        <aop:aspect ref="tm">
+            <aop:before pointcut-ref="tmp" method="beginTransaction"/>
+            <aop:after-returning pointcut-ref="tmp" method="commit"/>
+            <aop:after-throwing pointcut-ref="tmp" method="rollback"/>
+            <aop:after pointcut-ref="tmp" method="release"/>
+        </aop:aspect>
+    </aop:config>
+</beans>
