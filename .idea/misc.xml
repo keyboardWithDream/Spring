@@ -24,6 +24,7 @@
         <option value="$PROJECT_DIR$/L11_Proxy/pom.xml" />
         <option value="$PROJECT_DIR$/L12_AOP/pom.xml" />
         <option value="$PROJECT_DIR$/L13_AOP_Anno/pom.xml" />
+        <option value="$PROJECT_DIR$/L14_AOP_Transaction/pom.xml" />
       </list>
     </option>
   </component>

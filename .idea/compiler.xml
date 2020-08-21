@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="L8_IoC_Anno_Case" />
+        <module name="L14_AOP_Transaction" />
         <module name="L7_IoC_XML_Case" />
         <module name="L1_Coupling" />
         <module name="L4_Bean" />

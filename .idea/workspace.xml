@@ -23,13 +23,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0aac1c4-b399-492f-979d-c09989e10334" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/L13_AOP_Anno/L13_AOP_Anno.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L13_AOP_Anno/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L13_AOP_Anno/src/main/java/com/study/spring/service/IAccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L13_AOP_Anno/src/main/java/com/study/spring/service/impl/AccountServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L13_AOP_Anno/src/main/java/com/study/spring/utils/Logger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L13_AOP_Anno/src/main/resources/bean.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L13_AOP_Anno/src/test/java/com/study/spring/test/AccountServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L14_AOP_Transaction/L14_AOP_Transaction.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L14_AOP_Transaction/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L14_AOP_Transaction/src/main/java/com/study/spring/dao/IAccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L14_AOP_Transaction/src/main/java/com/study/spring/dao/impl/AccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L14_AOP_Transaction/src/main/java/com/study/spring/domian/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L14_AOP_Transaction/src/main/java/com/study/spring/service/IAccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L14_AOP_Transaction/src/main/java/com/study/spring/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L14_AOP_Transaction/src/main/java/com/study/spring/utils/ConnectionUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L14_AOP_Transaction/src/main/java/com/study/spring/utils/TransactionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L14_AOP_Transaction/src/main/resources/bean.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L14_AOP_Transaction/src/main/resources/jdbcConfig.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L14_AOP_Transaction/src/test/java/com/study/spring/test/AccountServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -87,7 +92,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/L13_AOP_Anno/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/L14_AOP_Transaction/src" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -102,15 +107,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="test" />
       <recent name="com.study.spring.service.impl" />
       <recent name="com.study.spring.factory" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Code\Spring\L13_AOP_Anno\src" />
-      <recent name="E:\Code\Spring\L11_Proxy\src\main\java\com\study\cglib" />
-      <recent name="E:\Code\Spring\L10_Transaction\src" />
-      <recent name="E:\Code\Spring\L9_Without_XML_IoC\src" />
-      <recent name="E:\Code\Spring\L8_IoC_Anno_Case\src" />
+      <recent name="E:\Code\Spring\L14_AOP_Transaction\src" />
+      <recent name="E:\Code\Spring\L14_AOP_Transaction\src\test" />
+      <recent name="E:\Code\Spring\L14_AOP_Transaction\src\main" />
+      <recent name="E:\Code\Spring\L14_AOP_Transaction\src\main\java\com\study\spring" />
+      <recent name="E:\Code\Spring\L14_AOP_Transaction\src\main\resources" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -119,7 +125,7 @@
       <command value="mvn:run" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.AccountServiceTest.testTransfer">
     <configuration name="AccountServiceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.study.spring.test.AccountServiceTest" />
       <module name="L13_AOP_Anno" />
@@ -144,8 +150,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AccountServiceTest.testFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="L14_AOP_Transaction" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.spring.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.study.spring.test" />
+      <option name="MAIN_CLASS_NAME" value="com.study.spring.test.AccountServiceTest" />
+      <option name="METHOD_NAME" value="testFindAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountServiceTest.testTransfer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="L14_AOP_Transaction" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.spring.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.study.spring.test" />
+      <option name="MAIN_CLASS_NAME" value="com.study.spring.test.AccountServiceTest" />
+      <option name="METHOD_NAME" value="testTransfer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AccountServiceTest.testTransfer" />
+        <item itemvalue="JUnit.AccountServiceTest.testFindAll" />
         <item itemvalue="Application.AccountServiceTest" />
       </list>
     </recent_temporary>
@@ -179,7 +219,7 @@
       <workItem from="1597906240170" duration="7776000" />
       <workItem from="1597916945063" duration="11940000" />
       <workItem from="1597994333423" duration="614000" />
-      <workItem from="1597998293530" duration="1608000" />
+      <workItem from="1597998293530" duration="9135000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1597308852698</created>
@@ -447,7 +487,21 @@
       <option name="project" value="LOCAL" />
       <updated>1597935490904</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="基于注解的AOP">
+      <created>1598000903071</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1598000903071</updated>
+    </task>
+    <task id="LOCAL-00040" summary="update">
+      <created>1598000929314</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1598000929314</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,7 +521,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="MVC开发间的耦合" />
     <MESSAGE value="工厂模式解耦" />
     <MESSAGE value="工厂模式" />
     <MESSAGE value="Spring中的IoC" />
@@ -491,10 +544,15 @@
     <MESSAGE value="基于xml的AOP" />
     <MESSAGE value="切入点表达式" />
     <MESSAGE value="环绕通知" />
+    <MESSAGE value="基于注解的AOP" />
     <MESSAGE value="update" />
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="615" y="234" key="#Project_Structure" timestamp="1598002926665">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="615" y="234" key="#Project_Structure/0.0.2560.1400@0.0.2560.1400" timestamp="1598002926665" />
     <state x="1014" y="578" key="#SQL_Dialects" timestamp="1597589729513">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -507,70 +565,86 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1202" y="389" width="1092" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1598000693692" />
-    <state x="1666" y="421" key="#com.intellij.ide.util.MemberChooser" timestamp="1597934930453">
+    <state x="1666" y="421" key="#com.intellij.ide.util.MemberChooser" timestamp="1598003175369">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1666" y="421" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1597934930453" />
-    <state x="1400" y="593" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1597648374296">
+    <state x="1666" y="421" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1598003175369" />
+    <state x="1400" y="593" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1598002738195">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1400" y="593" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1597648374296" />
+    <state x="1400" y="593" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1598002738195" />
     <state x="1486" y="436" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597648174974">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1486" y="436" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1597648174974" />
-    <state x="796" y="449" key="FileChooserDialogImpl" timestamp="1597999725366">
+    <state x="796" y="449" key="FileChooserDialogImpl" timestamp="1598001879716">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="796" y="449" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1597999725366" />
-    <state width="1604" height="416" key="GridCell.Tab.0.bottom" timestamp="1597936603721">
+    <state x="796" y="449" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1598001879716" />
+    <state width="2226" height="470" key="GridCell.Tab.0.bottom" timestamp="1598009049295">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1604" height="416" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1597936603721" />
-    <state width="1604" height="416" key="GridCell.Tab.0.center" timestamp="1597936603721">
+    <state width="2226" height="470" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1598009049295" />
+    <state width="2226" height="470" key="GridCell.Tab.0.center" timestamp="1598009049295">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1604" height="416" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1597936603721" />
-    <state width="1604" height="416" key="GridCell.Tab.0.left" timestamp="1597936603721">
+    <state width="2226" height="470" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1598009049295" />
+    <state width="2226" height="470" key="GridCell.Tab.0.left" timestamp="1598009049295">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1604" height="416" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1597936603721" />
-    <state width="1604" height="416" key="GridCell.Tab.0.right" timestamp="1597936603721">
+    <state width="2226" height="470" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1598009049295" />
+    <state width="2226" height="470" key="GridCell.Tab.0.right" timestamp="1598009049295">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1604" height="416" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1597936603721" />
+    <state width="2226" height="470" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1598009049295" />
     <state x="1271" y="463" key="IDE.errors.dialog" timestamp="1597591319823">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1271" y="463" key="IDE.errors.dialog/0.0.2560.1400@0.0.2560.1400" timestamp="1597591319823" />
-    <state x="973" y="388" key="SettingsEditor" timestamp="1597999731037">
+    <state x="973" y="388" key="SettingsEditor" timestamp="1598001893350">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="973" y="388" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1597999731037" />
+    <state x="973" y="388" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1598001893350" />
     <state width="82" height="461" key="SqlResolveConfigurable" timestamp="1597309809105">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="82" height="461" key="SqlResolveConfigurable/0.0.2560.1400@0.0.2560.1400" timestamp="1597309809105" />
-    <state x="1202" y="464" key="Vcs.Push.Dialog.v2" timestamp="1597935492854">
+    <state x="1202" y="464" key="Vcs.Push.Dialog.v2" timestamp="1598000930829">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1202" y="464" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1597935492854" />
-    <state x="0" y="9" width="1307" height="1117" key="dock-window-1" timestamp="1597760277317">
+    <state x="1202" y="464" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1598000930829" />
+    <state x="936" y="80" width="1509" height="1244" key="dock-window-1" timestamp="1598002700374">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="0" y="9" width="1307" height="1117" key="dock-window-1/0.0.2560.1400@0.0.2560.1400" timestamp="1597760277317" />
-    <state x="90" y="162" width="1112" height="1117" key="dock-window-2" timestamp="1597590717628">
+    <state x="936" y="80" width="1509" height="1244" key="dock-window-1/0.0.2560.1400@0.0.2560.1400" timestamp="1598002700374" />
+    <state x="1294" y="114" width="1390" height="1244" key="dock-window-2" timestamp="1598002700374">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="90" y="162" width="1112" height="1117" key="dock-window-2/0.0.2560.1400@0.0.2560.1400" timestamp="1597590717628" />
+    <state x="1294" y="114" width="1390" height="1244" key="dock-window-2/0.0.2560.1400@0.0.2560.1400" timestamp="1598002700374" />
+    <state x="1184" y="0" width="1390" height="1244" key="dock-window-3" timestamp="1598002700375">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1184" y="0" width="1390" height="1244" key="dock-window-3/0.0.2560.1400@0.0.2560.1400" timestamp="1598002700375" />
+    <state x="367" y="277" width="1390" height="1244" key="dock-window-4" timestamp="1598005761484">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="367" y="277" width="1390" height="1244" key="dock-window-4/0.0.2560.1400@0.0.2560.1400" timestamp="1598005761484" />
+    <state x="1053" y="309" width="1390" height="1244" key="dock-window-5" timestamp="1598005761484">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1053" y="309" width="1390" height="1244" key="dock-window-5/0.0.2560.1400@0.0.2560.1400" timestamp="1598005761484" />
+    <state x="770" y="194" width="1390" height="1273" key="dock-window-6" timestamp="1598009373387">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="770" y="194" width="1390" height="1273" key="dock-window-6/0.0.2560.1400@0.0.2560.1400" timestamp="1598009373387" />
     <state x="1472" y="471" key="extract.method.dialog" timestamp="1597913623894">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1472" y="471" key="extract.method.dialog/0.0.2560.1400@0.0.2560.1400" timestamp="1597913623894" />
-    <state x="1251" y="446" key="new project wizard" timestamp="1597999729932">
+    <state x="1251" y="446" key="new project wizard" timestamp="1598001891468">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1251" y="446" key="new project wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1597999729932" />
+    <state x="1251" y="446" key="new project wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1598001891468" />
     <state x="1368" y="304" width="672" height="677" key="run.anything.popup" timestamp="1597592834970">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

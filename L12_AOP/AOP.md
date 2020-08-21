@@ -227,5 +227,78 @@ public Object aroundPrintLog(ProceedingJoinPoint joinPoint){
 
 ## Spring基于注解的AOP
 
+`bean.xml`中配置
 
+```xml
+<!-- 配置spring容器创建时要扫描的包 -->
+<context:component-scan base-package="com.study.spring"/>
 
+<!-- 配置开启spring开启注解aop的支持 -->
+<aop:aspectj-autoproxy/>
+```
+
+`@Aspect`注解: 表示当前类为切面类
+
+```java
+@Component("logger")
+@Aspect
+public class Logger {
+
+    @Pointcut("execution(* com.study.spring.service.impl.*.*(..))")
+    private void transactionPoint(){}
+
+    /**
+     * 用于打印日志：计划在切入点方法之前执行（切入点方法就是业务层方法）
+     * 前置通知
+     */
+    @Before("transactionPoint()")
+    public void beforePrintLog(){
+        System.out.println("前置通知");
+    }
+
+    /**
+     * 后置通知
+     */
+    @AfterReturning("transactionPoint()")
+    public void afterReturnPrintLog(){
+        System.out.println("后置通知");
+    }
+
+    /**
+     * 异常通知
+     */
+    @AfterThrowing("transactionPoint()")
+    public void throwingPrintLog(){
+        System.out.println("异常通知");
+    }
+
+    /**
+     * 最终通知
+     */
+    @After("transactionPoint()")
+    public void afterPrintLog(){
+        System.out.println("最终通知");
+    }
+
+    /**
+     * 环绕通知
+     * @return
+     */
+    @Around("transactionPoint()")
+    public Object aroundPrintLog(ProceedingJoinPoint joinPoint){
+        Object result = null;
+        try {
+            Object[] args = joinPoint.getArgs();
+            System.out.println("环绕通知");
+            result = joinPoint.proceed(args);
+            System.out.println("环绕通知");
+            return result;
+        } catch (Throwable throwable) {
+            System.out.println("环绕通知");
+            throw new RuntimeException(throwable);
+        }finally {
+            System.out.println("环绕通知");
+        }
+    }
+}
+```
