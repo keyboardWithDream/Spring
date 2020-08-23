@@ -15,4 +15,9 @@
         <property name="username" value="root"/>
         <property name="password" value="Hhn004460"/>
     </bean>
+
+    <!-- 配置dao -->
+    <bean id="accountDao" class="com.study.spring.dao.impl.AccountDaoImpl">
+        <property name="template" ref="template"/>
+    </bean>
 </beans>
