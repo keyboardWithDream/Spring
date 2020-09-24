@@ -9,14 +9,17 @@
         <module name="L8_IoC_Anno_Case" />
         <module name="L14_AOP_Transaction" />
         <module name="L7_IoC_XML_Case" />
+        <module name="SpringSecurity" />
         <module name="L1_Coupling" />
         <module name="L4_Bean" />
         <module name="L3_Spring_IoC" />
         <module name="L9_Without_XML_IoC" />
+        <module name="L7_IoC_Case" />
         <module name="L11_Proxy" />
         <module name="L5_DI" />
         <module name="L12_AOP" />
         <module name="L10_Transaction" />
+        <module name="L15_JdbcTemlate" />
         <module name="L2_FactoryPattern" />
         <module name="L13_AOP_Anno" />
         <module name="L6_Anno_IoC" />
